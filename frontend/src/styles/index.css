@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFCF8; /* coconut-cream */
+    --color-foreground: #2D2A26; /* dark-tamarind */
+    --color-border: #E8E3DB; /* light-rice-paper */
+    --color-input: #F5F2ED; /* rice-paper */
+    --color-ring: #D4A574; /* turmeric-gold */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* pure-white */
+    --color-card-foreground: #2D2A26; /* dark-tamarind */
+    --color-popover: #FFFFFF; /* pure-white */
+    --color-popover-foreground: #2D2A26; /* dark-tamarind */
+    
+    /* Muted Colors */
+    --color-muted: #F5F2ED; /* rice-paper */
+    --color-muted-foreground: #6B6762; /* mild-spice */
+    
+    /* Primary Colors */
+    --color-primary: #D4A574; /* turmeric-gold */
+    --color-primary-foreground: #2D2A26; /* dark-tamarind */
+    
+    /* Secondary Colors */
+    --color-secondary: #7A9B57; /* curry-leaf-green */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #C17B3A; /* cinnamon-spice */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Destructive Colors */
+    --color-destructive: #D67B47; /* paprika-warmth */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Success Colors */
+    --color-success: #8FB069; /* fresh-herb */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning Colors */
+    --color-warning: #E6B547; /* gentle-saffron */
+    --color-warning-foreground: #2D2A26; /* dark-tamarind */
+    
+    /* Error Colors */
+    --color-error: #D67B47; /* paprika-warmth */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Border Radius */
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .heritage-shadow {
+    box-shadow: 0 4px 20px rgba(212, 165, 116, 0.15);
+  }
+  
+  .cultural-border {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+  }
+  
+  .spice-gradient {
+    background: linear-gradient(135deg, #D4A574 0%, #7A9B57 100%);
+  }
+  
+  .warm-filter {
+    filter: sepia(0.1) saturate(1.1) brightness(1.05);
+  }
+  
+  .organic-transition {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
